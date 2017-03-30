@@ -8,7 +8,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "postinstall": "(if not exist .nodered mkdir .nodered) && copy npm_.cmd .nodered\\npm_.cmd && cd .nodered && npm install node-red-contrib-ui node-red-contrib-azureiothubnode node-red-contrib-cognitive-services node-red-contrib-azure-blob-storage node-red-contrib-azure-table-storage node-red-contrib-azure-sql node-red-contrib-azure-documentdb && copy npm_.cmd npm.cmd /y && cd .. && copy npm_.cmd npm.cmd /y",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/jmservera/node-red-webapp/issues"
   },
-  "homepage": "https://github.com/jmservera/node-red-webapp#readme"
+  "homepage": "https://github.com/jmservera/node-red-webapp#readme",
+  "engines": {
+    "node": "6.9.1"
+  }
 }
